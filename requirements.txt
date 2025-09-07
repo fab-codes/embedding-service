@@ -2,6 +2,7 @@ python-dotenv
 
 fastapi
 uvicorn
+gunicorn
 
 langchain
 langchain-huggingface

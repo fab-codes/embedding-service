@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from langchain_huggingface import HuggingFaceEmbeddings
-from src.config.config import CPU_OR_CUDA, EMBEDDING_MODEL_ID
+from src.config.config import DEVICE, EMBEDDING_MODEL_ID
 
 # Init model
 embeddings = HuggingFaceEmbeddings(
     model_name=EMBEDDING_MODEL_ID,
-    model_kwargs={ "device": CPU_OR_CUDA },
+    model_kwargs={ "device": DEVICE },
     encode_kwargs={ "normalize_embeddings": True },
 )
 
