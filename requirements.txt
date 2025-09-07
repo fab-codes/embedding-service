@@ -1,0 +1,10 @@
+python-dotenv
+
+fastapi
+uvicorn
+
+langchain
+langchain-huggingface
+
+transformers
+sentence-transformers
